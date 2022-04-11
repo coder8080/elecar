@@ -55,6 +55,7 @@ const HomePage = () => {
       interval: 200,
       origin: "bottom",
     });
+    sr.reveal(".home .shape-big", { origin: "bottom" });
     sr.reveal(".home .home-button", { delay: 1000, origin: "bottom" });
     sr.reveal(".about .group, .offer .offer-data", { origin: "left" });
     sr.reveal(".about .data, .offer .offer-car", { origin: "right" });
@@ -69,7 +70,6 @@ const HomePage = () => {
     <div className="homepage">
       <section className="home section" id="home">
         <div className="shape shape-big"></div>
-        <div className="shape shape-small"></div>
         <div className="home-container container grid">
           <div className="data">
             <h1 className="section-title">Choose the best car</h1>
@@ -317,7 +317,7 @@ const HomePage = () => {
         </div>
       </section>
       <footer className="section footer">
-        <div className="shape shape-big"></div>
+        <div className="shape shape-medium"></div>
         <div className="shape shape-small"></div>
         <div className="container grid footer-container">
           <div className="content">

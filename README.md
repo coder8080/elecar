@@ -1,5 +1,7 @@
 # Elecar
 
+Github pages: [link](https://coder8080.github.io/elecar/)
+
 Eletric car dealer site (concept)
 
-Full README and github pages will be provided soon.
+Full README will be provided soon.

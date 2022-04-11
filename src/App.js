@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <main>
-      <BrowserRouter>
+      <BrowserRouter basename="/elecar">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
