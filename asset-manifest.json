@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/elecar/static/css/main.83d36663.css",
+    "main.js": "/elecar/static/js/main.76124fdb.js",
+    "static/media/features.png": "/elecar/static/media/features.aa89a2fba53796a52174.png",
+    "static/media/about.png": "/elecar/static/media/about.76e1ed7477de633481bb.png",
+    "static/media/offer-bg.png": "/elecar/static/media/offer-bg.5dd9e7f570b3090b42c5.png",
+    "static/media/home.png": "/elecar/static/media/home.6839bcfd758d34c7c2a7.png",
+    "static/media/offer.png": "/elecar/static/media/offer.54851bb3207d8ac26d1a.png",
+    "static/media/popular1.png": "/elecar/static/media/popular1.20012cc81c8611f445dc.png",
+    "static/media/popular4.png": "/elecar/static/media/popular4.7a454476f784284af6f1.png",
+    "static/media/popular3.png": "/elecar/static/media/popular3.ea39bd5b9f38ab4a1dff.png",
+    "static/media/popular5.png": "/elecar/static/media/popular5.739b82cc2223b3a4cf3c.png",
+    "static/media/featured5.png": "/elecar/static/media/featured5.23914159adee3a5180b4.png",
+    "static/media/featured3.png": "/elecar/static/media/featured3.90f5c3e3261e6f987d6c.png",
+    "static/media/featured1.png": "/elecar/static/media/featured1.6dbf6f538452f9e68932.png",
+    "static/media/popular2.png": "/elecar/static/media/popular2.4049af7c69eb68b6ad95.png",
+    "static/media/featured4.png": "/elecar/static/media/featured4.78ee63ab859664799c65.png",
+    "static/media/featured2.png": "/elecar/static/media/featured2.c1da548a934f61dd18e2.png",
+    "static/media/logo4.png": "/elecar/static/media/logo4.714804ae204075c1c707.png",
+    "static/media/map.svg": "/elecar/static/media/map.cac0b948309cf46988efa43aaf1670a3.svg",
+    "index.html": "/elecar/index.html",
+    "main.83d36663.css.map": "/elecar/static/css/main.83d36663.css.map",
+    "main.76124fdb.js.map": "/elecar/static/js/main.76124fdb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83d36663.css",
+    "static/js/main.76124fdb.js"
+  ]
+}
