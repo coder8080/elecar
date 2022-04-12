@@ -657,6 +657,11 @@
       column-gap: 1.5rem;
     }
 
+    .features img {
+      width: 100px !important;
+      background-color: red !important;
+    }
+
     .about .group .about-card {
       width: 11rem !important;
     }
@@ -671,6 +676,14 @@
     .about .group .about-card {
       width: 10rem !important;
       margin-right: -2rem;
+    }
+
+    .features .features-group img {
+      width: 200px !important;
+    }
+
+    .feature-card-2 {
+      top: 12rem !important;
     }
 
     .featured .featured-container .cards {
@@ -758,6 +771,13 @@
       .content {
         .footer-title {
           margin-bottom: 2rem;
+        }
+
+        .footer-social-link {
+          background: transparent;
+          border: none;
+          outline: none;
+          cursor: pointer;
         }
 
         .footer-social-link i {

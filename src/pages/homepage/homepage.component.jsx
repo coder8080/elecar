@@ -19,14 +19,6 @@ import ScrollReveal from "scrollreveal";
 import "./homepage.styles.scss";
 
 const HomePage = () => {
-  const sr = ScrollReveal({
-    origin: "top",
-    distance: "60px",
-    duration: 1500,
-    delay: 300,
-    reset: false,
-  });
-
   const [brand, setBrand] = useState("all");
 
   const scrollUpRef = useRef();
@@ -44,9 +36,14 @@ const HomePage = () => {
     };
     window.addEventListener("scroll", onScroll);
 
-    sr.reveal(
-      ".home .section-title, .popular-container .swiper, .features-group img"
-    );
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "60px",
+      duration: 2500,
+      delay: 300,
+      reset: false,
+    });
+    sr.reveal(".home .section-title");
     sr.reveal(".home .subtitle", { delay: 500 });
     sr.reveal(".home .elec", { delay: 600 });
     sr.reveal(".home img", { delay: 800 });
@@ -55,14 +52,7 @@ const HomePage = () => {
       interval: 200,
       origin: "bottom",
     });
-    sr.reveal(".home .shape-big", { origin: "bottom" });
-    sr.reveal(".home .home-button", { delay: 1000, origin: "bottom" });
-    sr.reveal(".about .group, .offer .offer-data", { origin: "left" });
-    sr.reveal(".about .data, .offer .offer-car", { origin: "right" });
-    sr.reveal(".feature-card", { interval: 200, delay: 100 });
-    sr.reveal(".featured .brands-group");
-    sr.reveal(".featured .cards .card", { interval: 50 });
-    sr.reveal(".logos-container .logo, .footer .content", { interval: 50 });
+    sr.reveal(".home-button", { delay: 1000, origin: "bottom" });
 
     return () => sr.destroy();
   }, []);
@@ -107,12 +97,12 @@ const HomePage = () => {
             </div>
           </div>
 
-          <a href="#" className="home-button">
+          <a href="#popular" className="home-button">
             START
           </a>
         </div>
       </section>
-      <section className="about section">
+      <section className="about section" id="about">
         <div className="about-container container grid">
           <div className="group">
             <img src={FutureTechnology} alt="electric car interier" />
@@ -135,13 +125,13 @@ const HomePage = () => {
               new and innovative platforms that last for a logn time.
             </p>
 
-            <a href="#" className="button">
+            <a href="#features" className="button">
               Know more
             </a>
           </div>
         </div>
       </section>
-      <section className="popular section">
+      <section className="popular section" id="popular">
         <div className="popular-container container">
           <h2 className="section-title">
             Choose your electric car <br />
@@ -205,7 +195,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="section features">
+      <section className="section features" id="features">
         <h2 className="section-title">More features</h2>
         <div className="features-container container">
           <div className="features-group">
@@ -236,33 +226,33 @@ const HomePage = () => {
 
         <img src={Map} alt="map" className="map" />
       </section>
-      <section className="section featured">
+      <section className="section featured" id="featured">
         <h2 className="section-title">Featured Luxury Cars</h2>
         <div className="container featured-container">
           <div className="brands-group">
             <div
-              className={`brand ${brand == "all" ? "active" : ""}`}
+              className={`brand ${brand === "all" ? "active" : ""}`}
               data-filter="all"
               onClick={() => setBrand("all")}
             >
               All
             </div>
             <div
-              className={`brand ${brand == "tesla" ? "active" : ""}`}
+              className={`brand ${brand === "tesla" ? "active" : ""}`}
               data-filter=".tesla"
               onClick={() => setBrand("tesla")}
             >
               <img src={Tesla} alt="tesla" />
             </div>
             <div
-              className={`brand ${brand == "audi" ? "active" : ""}`}
+              className={`brand ${brand === "audi" ? "active" : ""}`}
               data-filter=".audi"
               onClick={() => setBrand("audi")}
             >
               <img src={Audi} alt="audi" />
             </div>
             <div
-              className={`brand ${brand == "porsche" ? "active" : ""}`}
+              className={`brand ${brand === "porsche" ? "active" : ""}`}
               data-filter=".porsche"
               onClick={() => setBrand("porsche")}
             >
@@ -289,7 +279,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="section offer">
+      <section className="section offer" id="offer">
         <img src={OfferBackground} alt="background" className="background" />
         <div className="offer-container container grid">
           <div className="offer-data">
@@ -300,14 +290,12 @@ const HomePage = () => {
               Be the first to receive all the information about out products and
               new cars by email by subscribing to our mailing list.
             </p>
-            <a href="#" className="button">
-              Subscribe now
-            </a>
+            <button className="button">Subscribe now</button>
           </div>
           <img src={Offer} alt="car" className="offer-car" />
         </div>
       </section>
-      <section className="section logos">
+      <section className="section logos" id="logos">
         <div className="logos-container container grid">
           {CARS_DATA.logos.map((Logo, i) => (
             <div key={i} className="logo">
@@ -316,7 +304,7 @@ const HomePage = () => {
           ))}
         </div>
       </section>
-      <footer className="section footer">
+      <footer className="section footer" id="footer">
         <div className="shape shape-medium"></div>
         <div className="shape shape-small"></div>
         <div className="container grid footer-container">
@@ -333,22 +321,22 @@ const HomePage = () => {
             <h3 className="footer-title">Company</h3>
             <ul className="footer-links">
               <li>
-                <a href="#" className="footer-link">
+                <a href="#about" className="footer-link">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link">
+                <a href="#popular" className="footer-link">
                   Cars
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link">
+                <a href="#about" className="footer-link">
                   History
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link">
+                <a href="#featured" className="footer-link">
                   Shop
                 </a>
               </li>
@@ -359,22 +347,22 @@ const HomePage = () => {
             <h3 className="footer-title">Information</h3>
             <ul className="footer-links">
               <li>
-                <a href="#" className="footer-link">
+                <a href="#home" className="footer-link">
                   Reuest a quote
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link">
+                <a href="#home" className="footer-link">
                   Find a dealer
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link">
+                <a href="#home" className="footer-link">
                   Contact us
                 </a>
               </li>
               <li>
-                <a href="#" className="footer-link">
+                <a href="#home" className="footer-link">
                   Services
                 </a>
               </li>
@@ -384,15 +372,15 @@ const HomePage = () => {
           <div className="content">
             <h3 className="footer-title">Follow us</h3>
             <ul className="footer-social-networks">
-              <a href="#" className="footer-social-link">
+              <button className="footer-social-link">
                 <i className="ri-facebook-fill"></i>
-              </a>
-              <a href="#" className="footer-social-link">
+              </button>
+              <button className="footer-social-link">
                 <i className="ri-instagram-line"></i>
-              </a>
-              <a href="#" className="footer-social-link">
+              </button>
+              <button href="#" className="footer-social-link">
                 <i className="ri-twitter-fill"></i>
-              </a>
+              </button>
             </ul>
           </div>
         </div>
