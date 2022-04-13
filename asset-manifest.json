@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/elecar/static/css/main.700a830f.css",
-    "main.js": "/elecar/static/js/main.fde4c191.js",
+    "main.css": "/elecar/static/css/main.bf7954a1.css",
+    "main.js": "/elecar/static/js/main.f4655033.js",
     "static/media/features.png": "/elecar/static/media/features.aa89a2fba53796a52174.png",
     "static/media/about.png": "/elecar/static/media/about.76e1ed7477de633481bb.png",
     "static/media/offer-bg.png": "/elecar/static/media/offer-bg.5dd9e7f570b3090b42c5.png",
@@ -20,11 +20,11 @@
     "static/media/logo4.png": "/elecar/static/media/logo4.714804ae204075c1c707.png",
     "static/media/map.svg": "/elecar/static/media/map.cac0b948309cf46988efa43aaf1670a3.svg",
     "index.html": "/elecar/index.html",
-    "main.700a830f.css.map": "/elecar/static/css/main.700a830f.css.map",
-    "main.fde4c191.js.map": "/elecar/static/js/main.fde4c191.js.map"
+    "main.bf7954a1.css.map": "/elecar/static/css/main.bf7954a1.css.map",
+    "main.f4655033.js.map": "/elecar/static/js/main.f4655033.js.map"
   },
   "entrypoints": [
-    "static/css/main.700a830f.css",
-    "static/js/main.fde4c191.js"
+    "static/css/main.bf7954a1.css",
+    "static/js/main.f4655033.js"
   ]
 }
