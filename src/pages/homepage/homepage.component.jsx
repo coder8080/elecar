@@ -372,15 +372,15 @@ const HomePage = () => {
           <div className="content">
             <h3 className="footer-title">Follow us</h3>
             <ul className="footer-social-networks">
-              <button className="footer-social-link">
+              <i className="footer-social-link">
                 <i className="ri-facebook-fill"></i>
-              </button>
-              <button className="footer-social-link">
+              </i>
+              <i className="footer-social-link">
                 <i className="ri-instagram-line"></i>
-              </button>
-              <button href="#" className="footer-social-link">
+              </i>
+              <i href="#" className="footer-social-link">
                 <i className="ri-twitter-fill"></i>
-              </button>
+              </i>
             </ul>
           </div>
         </div>
