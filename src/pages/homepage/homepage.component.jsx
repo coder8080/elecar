@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useLayoutEffect, useRef } from "react";
 import PorscheMissionE from "../../assets/home.png";
 import FutureTechnology from "../../assets/about.png";
 import Features from "../../assets/features.png";
@@ -23,7 +23,7 @@ const HomePage = () => {
 
   const scrollUpRef = useRef();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     mixitup(".cards", { animation: { duration: 300 } });
 
     const onScroll = () => {
